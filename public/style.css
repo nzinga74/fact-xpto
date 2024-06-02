@@ -1,0 +1,46 @@
+body {
+    background: #ccc;
+}
+
+
+.container {
+    width: 250px;
+    height: auto;
+    background-color: #242424;
+    margin:  0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.container-left {
+    width: 80%;
+}
+.container-right {
+    width: 20%;
+    flex-direction: column;
+}
+.container-right > button {
+    width: 100%;
+}
+
+input {
+   
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    
+}
+button {
+    width: 21%;
+    height: 40px;
+    border-radius: 2px;
+    border: 0;
+    margin-top:4px ;
+    background-color: yellow;
+    color: black;
+}
+.btn {
+    margin-top: 20px;
+}

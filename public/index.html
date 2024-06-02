@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet"/>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-left">
+            <input id="input"/>
+            <div class="button-container">
+                <button onclick="onButtonPress(9)">9</button>
+                <button onclick="onButtonPress(8)">8</button>
+                <button onclick="onButtonPress(7)">7</button>
+                <button onclick="onButtonPress('/')">/</button>
+            </div>
+            <div class="button-container">
+                <button onclick="onButtonPress(6)">6</button>
+                <button onclick="onButtonPress(5)">5</button>
+                <button onclick="onButtonPress(4)">4</button>
+                <button onclick="onButtonPress('-')">-</button>
+            </div>
+            <div class="button-container">
+                <button onclick="onButtonPress(3)">3</button>
+                <button onclick="onButtonPress(2)">2</button>
+                <button onclick="onButtonPress(1)">1</button>
+                <button onclick="onButtonPress('*')">*</button>
+            </div>
+            <div class="button-container">
+                <button onclick="onButtonPress(0)">0</button>
+                <button onclick="onButtonPress('.')">.</button>
+                <button onclick="showResult()">=</button>
+                <button onclick="onButtonPress('/')">/</button>
+            </div>
+        </div>
+        <div class="container-right">
+            <button onclick="onClear()">AC</button>
+            <button class="btn" onclick="onButtonPress('%')">%</button>
+            <button onclick="onButtonPress('**')">X^Y</button>
+            <button onclick="onCalculateFatorial()">!</button>
+            <button onclick="onButtonPress('+')">+</button>
+        </div>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
